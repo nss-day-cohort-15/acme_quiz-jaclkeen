@@ -1,0 +1,58 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "personal",
+            "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+          "id": 0,
+          "category": 1,
+          "name": "recreational",
+          "description": "Fireworks intended for large crowds."
+        }
+        {
+          "id": 0,
+          "category": 2,
+          "name": "super fireworks"
+          "description": "Fireworks meant to blow your socks off.. Literally."
+        }
+        {
+          "id": 1,
+          "category": 0,
+          "name": "company use",
+          "description": "Dynamite developed specifically for businesses"
+        }
+        {
+          "id": 1,
+          "category": 1,
+          "name": "state use",
+          "description": "Dynamite developed specifically for state businesses"
+        }
+        {
+          "id": 1,
+          "category": 2,
+          "name": "federal use",
+          "description": "Dynamite developed specifically for federal use."
+        }
+        {
+          "id": 2,
+          "category": 0,
+          "name": "Luna",
+          "description": "Used to take out small villages"
+        }
+        {
+          "id": 2,
+          "category": 1,
+          "name": "Buddy",
+          "description": "Used to clear small towns"
+        }
+        {
+          "id": 2,
+          "category": 2,
+          "name": "Billy Bob",
+          "description": "Used to destroy the world"
+        }
+    ]
+}
