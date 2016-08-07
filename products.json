@@ -21,7 +21,7 @@
         "dynamite": {
           "id": 1,
           "type": 0,
-          "name": "Small Blow",
+          "name": "Small Pop",
           "description": "Used to destroy small rocks"
         },
         "stronger_dynamite":{

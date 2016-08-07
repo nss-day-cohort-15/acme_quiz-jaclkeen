@@ -3,37 +3,37 @@
         {
             "id": 0,
             "category": 0,
-            "name": "personal",
+            "name": "Personal",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         },
         {
           "id": 0,
           "category": 1,
-          "name": "recreational",
+          "name": "Recreational",
           "description": "Fireworks intended for large crowds."
         },
         {
           "id": 0,
           "category": 2,
-          "name": "super fireworks",
+          "name": "Super Fireworks",
           "description": "Fireworks meant to blow your socks off.. Literally."
         },
         {
           "id": 1,
           "category": 0,
-          "name": "company use",
+          "name": "Company Use",
           "description": "Dynamite developed specifically for businesses"
         },
         {
           "id": 1,
           "category": 1,
-          "name": "state use",
+          "name": "State Use",
           "description": "Dynamite developed specifically for state businesses"
         },
         {
           "id": 1,
           "category": 2,
-          "name": "federal use",
+          "name": "Federal Use",
           "description": "Dynamite developed specifically for federal use."
         },
         {
