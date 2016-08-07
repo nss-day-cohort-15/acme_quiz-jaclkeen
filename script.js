@@ -36,7 +36,7 @@ function filter(categories, types, products){
     for(var key in products){
       if(products[key].id === 1){
         $filtered.push(products[key]);
-        // console.log($filtered)
+    console.log("demoltion--------->", $filtered)
       }
     }
   }
