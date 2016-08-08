@@ -22,15 +22,13 @@ Promise.all([
 ])
 
 function filter(categories, types, products){
-  var $filtered = [];
-  var $selection = $('#types').val();
-  var category;
-  var all_cat = []
+  var $filtered = []
+  var $selection = $('#types').val()
+
   if($selection === 'fireworks'){
     for(var key in types){
       if(types[key].id === 0){
-        category = categories[0].name
-        $filtered.push(types[key]);
+        $filtered.push(types[key])
       }
     }
   }
@@ -38,9 +36,8 @@ function filter(categories, types, products){
   else if($selection === 'demolition'){
     for(var key in types){
       if(types[key].id === 1){
-        category = categories[1].name
-        $filtered.push(types[key]);
-    console.log("demolition--->", $filtered)
+        $filtered.push(types[key])
+        console.log("demolition--->", $filtered)
       }
     }
   }
@@ -48,8 +45,7 @@ function filter(categories, types, products){
   else if($selection === 'wmd'){
     for(var key in types){
       if(types[key].id === 2){
-        category = categories[2].name
-        $filtered.push(types[key]);
+        $filtered.push(types[key])
         console.log($filtered)
       }
     }
@@ -57,47 +53,42 @@ function filter(categories, types, products){
 
   else{
     for(var key in types){
-      $filtered.push(types[key]);
-      all_cat.push(types[key].id);
-      determineCat(all_cat, category)
+      $filtered.push(types[key])
     }
   }
 
-  console.log($filtered, category)
-  print($filtered, category);
+  print($filtered)
 }
 
-function print(element, categories){
-  var $content = $('#json_area');
-  $content.html("");
+function print(element){
+  var $content = $('#json_area')
+  $content.html("")
   element.forEach(function(item){
-    var $info = $('<tr></tr>');
-    $info.addClass('row');
+    var $info = $('<tr></tr>')
+    $info.addClass('row')
     $info.html(`
       <td class='col-md-10'>${item.name}</td>
-      <td class='col-md-2'>${categories}</td>
+      <td class='col-md-2'>${determineCat(item.id)}</td>
     `)
     $content.append($info);
   })
 }
 
 function filterForm(){
-  var change = document.getElementById('types');
+  var change = document.getElementById('types')
   change.addEventListener('change', function(){
     filter(categories, types, products)
   })
 }
 
-function determineCat(array, variable){
-  for(var i = 0; i < array.length; i++){
-    if(array[i] === 0){
-      variable = 'Fireworks'
-    }
-    else if(array[i] === 1){
-      variable === "Demolition"
-    }
-    else{
-      variable === "Weapons of Mass Destruction"
-    }
+function determineCat(num){
+  if(num === 0){
+    return 'Fireworks'
+  }
+  else if(num === 1){
+    return 'Demolition'
+  }
+  else{
+    return 'Weapons of Mass Destruction'
   }
 }
