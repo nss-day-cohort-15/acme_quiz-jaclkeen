@@ -3,21 +3,18 @@ var categories, types, products
 Promise.all([
   $.getJSON('categories.json')
     .then(function(r){
-      categories=r.categories
+      categories = r.categories
     }),
   $.getJSON('types.json')
     .then(function(r){
-      types=r.types
+      types = r.types
     }),
   $.getJSON('products.json')
   .then(function(r){
-    products=r.products[0]
+    products = r.products[0]
   }).then(function(){
-    filter(categories, types, products)
-    filterForm()
-    // console.log(products)
-    // console.log(types)
-    // console.log(categories)
+      filter(categories, types, products)
+      filterForm()
   })
 ])
 
@@ -27,15 +24,16 @@ function filter(categories, types, products){
 
   if($selection === 'fireworks'){
     for(var key in types){
-      if(types[key].id === 0){
+      if(types[key].category === 0){
         $filtered.push(types[key])
+        console.log($filtered)
       }
     }
   }
 
   else if($selection === 'demolition'){
     for(var key in types){
-      if(types[key].id === 1){
+      if(types[key].category === 1){
         $filtered.push(types[key])
         console.log("demolition--->", $filtered)
       }
@@ -44,9 +42,8 @@ function filter(categories, types, products){
 
   else if($selection === 'wmd'){
     for(var key in types){
-      if(types[key].id === 2){
+      if(types[key].category === 2){
         $filtered.push(types[key])
-        console.log($filtered)
       }
     }
   }
@@ -56,7 +53,6 @@ function filter(categories, types, products){
       $filtered.push(types[key])
     }
   }
-
   print($filtered)
 }
 
@@ -67,8 +63,8 @@ function print(element){
     var $info = $('<tr></tr>')
     $info.addClass('row')
     $info.html(`
-      <td class='col-md-10'>${item.name}</td>
-      <td class='col-md-2'>${determineCat(item.id)}</td>
+      <td class='col-md-6'>${item.name}</td>
+      <td class='col-md-6'>${determineCat(item.category)}</td>
     `)
     $content.append($info);
   })
