@@ -1,0 +1,58 @@
+{
+    "products": [{
+        "fairy_sparklers": {
+            "id": 0,
+            "type": 0,
+            "name": "Fairy Sparklers",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+      "diamond_dust": {
+          "id": 1,
+          "type": 0,
+          "name": "Diamond Dust",
+          "description": "Small fireworks meant for small crowds."
+        },
+        "big_boy": {
+          "id": 2,
+          "type": 0,
+          "name": "Big Boy",
+          "description": "Will really blow your socks off"
+        },
+        "dynamite": {
+          "id": 3,
+          "type": 1,
+          "name": "Small Pop",
+          "description": "Used to destroy small rocks"
+        },
+        "stronger_dynamite":{
+          "id": 4,
+          "type": 1,
+          "name": "Stronger Dynamite",
+          "description": "This is some strong stuff"
+        },
+        "big_mike":{
+          "id": 5,
+          "type": 1,
+          "name": "Big Mike",
+          "description": "May or may not destroy Everest"
+        },
+        "luna":{
+          "id": 6,
+          "type": 2,
+          "name": "Little Luna",
+          "description": "Perfect for destroying small villages."
+        },
+        "bertha":{
+          "id": 7,
+          "type": 2,
+          "name": "Big Bertha",
+          "description": "Perfect for destorying a small country."
+        },
+        "nuke":{
+          "id": 8,
+          "type": 2,
+          "name": "Global Thermonuclear Warfare",
+          "description": "Wanna destory the world? This one's for you!"
+        }
+    }]
+}

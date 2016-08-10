@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modern-JS Quiz</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+  <h1>Acme</h1>
+
+  <div class="products">
+    <select class="types" id="types">
+      <option class="all" id="all" value="all">Show All</option>
+      <option class="fireworks" id="fireworks" value="fireworks">Fireworks</option>
+      <option class="demolition" id="demolition" value="demolition">Demolition</option>
+      <option class="wmd" id="wmd" value="wmd">Weapons of Mass Destruction</option>
+    </select>
+  </div><br>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr class="row">
+        <td class="col-md-10">Product Name</td>
+        <td class="col-md-2">Product Category</td>
+      </tr>
+    </thead>
+    <tbody class="json_area" id="json_area">
+      <!-- JSON goes here -->
+    </tbody>
+  </table>
+
+  <script src="/bower_components/jquery/dist/jquery.min.js" ></script>
+  <script src="script.js"></script>
+  <script scr="acme.js"></script>
+</body>
+</html>
